@@ -1,6 +1,6 @@
-name: shared
+name: wishfly_shared
 description: A starting point for Dart libraries or applications.
-version: 1.0.0
+version: 0.0.3
 
 environment:
   sdk: ">=2.19.3 <3.0.0"

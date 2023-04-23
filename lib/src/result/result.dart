@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:shared/src/exceptions/exceptions.dart';
+import 'package:wishfly_shared/src/exceptions/exceptions.dart';
 
 part 'result.freezed.dart';
 
