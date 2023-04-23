@@ -1,4 +1,4 @@
-library shared;
+library wishfly_shared;
 
 export 'src/exceptions/exceptions.dart';
 export 'src/request/request.dart';
