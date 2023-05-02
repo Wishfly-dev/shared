@@ -24,5 +24,6 @@ class ServerResponseError with _$ServerResponseError {
     required String message,
   }) = _ServerResponseError;
 
-  factory ServerResponseError.fromJson(Map<String, dynamic> json) => _$ServerResponseErrorFromJson(json);
+  factory ServerResponseError.fromJson(Map<String, dynamic> json) =>
+      _$ServerResponseErrorFromJson(json);
 }

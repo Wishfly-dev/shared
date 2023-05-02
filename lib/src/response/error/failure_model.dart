@@ -7,5 +7,6 @@ class FailureDto with _$FailureDto {
     required String message,
   }) = _FailureDto;
 
-  factory FailureDto.fromJson(Map<String, Object?> json) => _$FailureDtoFromJson(json);
+  factory FailureDto.fromJson(Map<String, Object?> json) =>
+      _$FailureDtoFromJson(json);
 }

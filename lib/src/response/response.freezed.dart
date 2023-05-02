@@ -607,6 +607,7 @@ mixin _$UserResponseDto {
   String get username => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
   DateTime get createdAt => throw _privateConstructorUsedError;
+  String get currentPlan => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -620,7 +621,12 @@ abstract class $UserResponseDtoCopyWith<$Res> {
           UserResponseDto value, $Res Function(UserResponseDto) then) =
       _$UserResponseDtoCopyWithImpl<$Res, UserResponseDto>;
   @useResult
-  $Res call({int id, String username, String email, DateTime createdAt});
+  $Res call(
+      {int id,
+      String username,
+      String email,
+      DateTime createdAt,
+      String currentPlan});
 }
 
 /// @nodoc
@@ -640,6 +646,7 @@ class _$UserResponseDtoCopyWithImpl<$Res, $Val extends UserResponseDto>
     Object? username = null,
     Object? email = null,
     Object? createdAt = null,
+    Object? currentPlan = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -658,6 +665,10 @@ class _$UserResponseDtoCopyWithImpl<$Res, $Val extends UserResponseDto>
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      currentPlan: null == currentPlan
+          ? _value.currentPlan
+          : currentPlan // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -670,7 +681,12 @@ abstract class _$$_UserResponseDtoCopyWith<$Res>
       __$$_UserResponseDtoCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int id, String username, String email, DateTime createdAt});
+  $Res call(
+      {int id,
+      String username,
+      String email,
+      DateTime createdAt,
+      String currentPlan});
 }
 
 /// @nodoc
@@ -688,6 +704,7 @@ class __$$_UserResponseDtoCopyWithImpl<$Res>
     Object? username = null,
     Object? email = null,
     Object? createdAt = null,
+    Object? currentPlan = null,
   }) {
     return _then(_$_UserResponseDto(
       id: null == id
@@ -706,6 +723,10 @@ class __$$_UserResponseDtoCopyWithImpl<$Res>
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      currentPlan: null == currentPlan
+          ? _value.currentPlan
+          : currentPlan // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -717,7 +738,8 @@ class _$_UserResponseDto implements _UserResponseDto {
       {required this.id,
       required this.username,
       required this.email,
-      required this.createdAt});
+      required this.createdAt,
+      required this.currentPlan});
 
   factory _$_UserResponseDto.fromJson(Map<String, dynamic> json) =>
       _$$_UserResponseDtoFromJson(json);
@@ -730,10 +752,12 @@ class _$_UserResponseDto implements _UserResponseDto {
   final String email;
   @override
   final DateTime createdAt;
+  @override
+  final String currentPlan;
 
   @override
   String toString() {
-    return 'UserResponseDto(id: $id, username: $username, email: $email, createdAt: $createdAt)';
+    return 'UserResponseDto(id: $id, username: $username, email: $email, createdAt: $createdAt, currentPlan: $currentPlan)';
   }
 
   @override
@@ -746,12 +770,15 @@ class _$_UserResponseDto implements _UserResponseDto {
                 other.username == username) &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt));
+                other.createdAt == createdAt) &&
+            (identical(other.currentPlan, currentPlan) ||
+                other.currentPlan == currentPlan));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, username, email, createdAt);
+  int get hashCode =>
+      Object.hash(runtimeType, id, username, email, createdAt, currentPlan);
 
   @JsonKey(ignore: true)
   @override
@@ -772,7 +799,8 @@ abstract class _UserResponseDto implements UserResponseDto {
       {required final int id,
       required final String username,
       required final String email,
-      required final DateTime createdAt}) = _$_UserResponseDto;
+      required final DateTime createdAt,
+      required final String currentPlan}) = _$_UserResponseDto;
 
   factory _UserResponseDto.fromJson(Map<String, dynamic> json) =
       _$_UserResponseDto.fromJson;
@@ -785,6 +813,8 @@ abstract class _UserResponseDto implements UserResponseDto {
   String get email;
   @override
   DateTime get createdAt;
+  @override
+  String get currentPlan;
   @override
   @JsonKey(ignore: true)
   _$$_UserResponseDtoCopyWith<_$_UserResponseDto> get copyWith =>

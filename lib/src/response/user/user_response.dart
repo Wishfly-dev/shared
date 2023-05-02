@@ -7,7 +7,9 @@ class UserResponseDto with _$UserResponseDto {
     required String username,
     required String email,
     required DateTime createdAt,
+    required String currentPlan,
   }) = _UserResponseDto;
 
-  factory UserResponseDto.fromJson(Map<String, Object?> json) => _$UserResponseDtoFromJson(json);
+  factory UserResponseDto.fromJson(Map<String, Object?> json) =>
+      _$UserResponseDtoFromJson(json);
 }

@@ -7,5 +7,6 @@ class LoginResponseDto with _$LoginResponseDto {
     required String refreshToken,
   }) = _LoginResponseDto;
 
-  factory LoginResponseDto.fromJson(Map<String, Object?> json) => _$LoginResponseDtoFromJson(json);
+  factory LoginResponseDto.fromJson(Map<String, Object?> json) =>
+      _$LoginResponseDtoFromJson(json);
 }

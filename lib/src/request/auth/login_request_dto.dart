@@ -7,5 +7,6 @@ class LoginRequestDto with _$LoginRequestDto {
     required String password,
   }) = _LoginRequestDto;
 
-  factory LoginRequestDto.fromJson(Map<String, Object?> json) => _$LoginRequestDtoFromJson(json);
+  factory LoginRequestDto.fromJson(Map<String, Object?> json) =>
+      _$LoginRequestDtoFromJson(json);
 }

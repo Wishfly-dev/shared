@@ -12,5 +12,6 @@ class ProjectResponseDto with _$ProjectResponseDto {
     required List<WishResponseDto> wishes,
   }) = _ProjectResponseDto;
 
-  factory ProjectResponseDto.fromJson(Map<String, Object?> json) => _$ProjectResponseDtoFromJson(json);
+  factory ProjectResponseDto.fromJson(Map<String, Object?> json) =>
+      _$ProjectResponseDtoFromJson(json);
 }

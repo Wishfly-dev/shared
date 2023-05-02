@@ -8,5 +8,6 @@ class RegisterRequestDto with _$RegisterRequestDto {
     required String username,
   }) = _RegisterRequestDto;
 
-  factory RegisterRequestDto.fromJson(Map<String, Object?> json) => _$RegisterRequestDtoFromJson(json);
+  factory RegisterRequestDto.fromJson(Map<String, Object?> json) =>
+      _$RegisterRequestDtoFromJson(json);
 }

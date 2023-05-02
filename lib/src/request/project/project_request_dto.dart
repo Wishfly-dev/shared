@@ -7,5 +7,6 @@ class ProjectRequestDto with _$ProjectRequestDto {
     required String? description,
   }) = _ProjectRequestDto;
 
-  factory ProjectRequestDto.fromJson(Map<String, Object?> json) => _$ProjectRequestDtoFromJson(json);
+  factory ProjectRequestDto.fromJson(Map<String, Object?> json) =>
+      _$ProjectRequestDtoFromJson(json);
 }

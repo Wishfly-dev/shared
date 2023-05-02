@@ -34,7 +34,8 @@ class UserExistsException implements WishflyException {
 
 class InvalidCredentialsException implements WishflyException {
   @override
-  final String message = 'Sorry, the email or password you entered is incorrect.';
+  final String message =
+      'Sorry, the email or password you entered is incorrect.';
   @override
   final int status = HttpStatus.forbidden;
 }

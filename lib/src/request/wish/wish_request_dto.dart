@@ -8,7 +8,8 @@ class WishRequestDto with _$WishRequestDto {
     required int projectId,
   }) = _WishRequestDto;
 
-  factory WishRequestDto.fromJson(Map<String, Object?> json) => _$WishRequestDtoFromJson(json);
+  factory WishRequestDto.fromJson(Map<String, Object?> json) =>
+      _$WishRequestDtoFromJson(json);
 }
 
 @freezed
@@ -21,5 +22,6 @@ class WishUpdateRequestDto with _$WishUpdateRequestDto {
     String? currentState,
   }) = _WishUpdateRequestDto;
 
-  factory WishUpdateRequestDto.fromJson(Map<String, Object?> json) => _$WishUpdateRequestDtoFromJson(json);
+  factory WishUpdateRequestDto.fromJson(Map<String, Object?> json) =>
+      _$WishUpdateRequestDtoFromJson(json);
 }

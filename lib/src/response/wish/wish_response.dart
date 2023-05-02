@@ -11,5 +11,6 @@ class WishResponseDto with _$WishResponseDto {
     required String state,
   }) = _WishResponseDto;
 
-  factory WishResponseDto.fromJson(Map<String, Object?> json) => _$WishResponseDtoFromJson(json);
+  factory WishResponseDto.fromJson(Map<String, Object?> json) =>
+      _$WishResponseDtoFromJson(json);
 }
