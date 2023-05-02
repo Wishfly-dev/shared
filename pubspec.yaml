@@ -1,6 +1,6 @@
 name: wishfly_shared
 description: Wishfly shared code between client and server. This package should not be used directly.
-version: 0.0.4
+version: 0.0.4+1
 repository: https://github.com/Wishfly-dev/shared
 
 environment:
@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   freezed_annotation: ^2.2.0
+  json_serializable: ^6.6.1
 
 dev_dependencies:
   test: ^1.21.0

@@ -1,3 +1,5 @@
+## 0.0.4+1
+- fix: [User] response model
 ## 0.0.4
 - feat: Add current plan to user response
 
