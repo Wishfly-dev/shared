@@ -1,3 +1,6 @@
+## 0.0.4
+- feat: Add current plan to user response
+
 ## 0.0.3
 - pub.dev release
 
