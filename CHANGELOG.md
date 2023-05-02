@@ -1,3 +1,5 @@
+## 0.0.4+2
+- fix: name of shared file
 ## 0.0.4+1
 - fix: [User] response model
 ## 0.0.4
