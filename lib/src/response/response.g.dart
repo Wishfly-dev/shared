@@ -62,6 +62,7 @@ _$_UserResponseDto _$$_UserResponseDtoFromJson(Map<String, dynamic> json) =>
       username: json['username'] as String,
       email: json['email'] as String,
       createdAt: DateTime.parse(json['createdAt'] as String),
+      currentPlan: json['currentPlan'] as String,
     );
 
 Map<String, dynamic> _$$_UserResponseDtoToJson(_$_UserResponseDto instance) =>
@@ -70,6 +71,7 @@ Map<String, dynamic> _$$_UserResponseDtoToJson(_$_UserResponseDto instance) =>
       'username': instance.username,
       'email': instance.email,
       'createdAt': instance.createdAt.toIso8601String(),
+      'currentPlan': instance.currentPlan,
     };
 
 _$_WishResponseDto _$$_WishResponseDtoFromJson(Map<String, dynamic> json) =>
