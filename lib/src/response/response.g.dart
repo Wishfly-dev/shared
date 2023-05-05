@@ -30,6 +30,18 @@ Map<String, dynamic> _$$_FailureDtoToJson(_$_FailureDto instance) =>
       'message': instance.message,
     };
 
+_$_ProjectDetailResponseDto _$$_ProjectDetailResponseDtoFromJson(
+        Map<String, dynamic> json) =>
+    _$_ProjectDetailResponseDto(
+      currentPlan: json['currentPlan'] as String,
+    );
+
+Map<String, dynamic> _$$_ProjectDetailResponseDtoToJson(
+        _$_ProjectDetailResponseDto instance) =>
+    <String, dynamic>{
+      'currentPlan': instance.currentPlan,
+    };
+
 _$_ProjectResponseDto _$$_ProjectResponseDtoFromJson(
         Map<String, dynamic> json) =>
     _$_ProjectResponseDto(
