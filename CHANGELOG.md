@@ -1,3 +1,5 @@
+## 0.1.0
+- feat: added project detail response 
 ## 0.0.4+2
 - fix: name of shared file
 ## 0.0.4+1
