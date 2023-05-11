@@ -30,6 +30,22 @@ Map<String, dynamic> _$$_FailureDtoToJson(_$_FailureDto instance) =>
       'message': instance.message,
     };
 
+_$_PaymentResponseDto _$$_PaymentResponseDtoFromJson(
+        Map<String, dynamic> json) =>
+    _$_PaymentResponseDto(
+      sessionId: json['sessionId'] as String,
+      paymentId: json['paymentId'] as String,
+      liveMode: json['liveMode'] as bool,
+    );
+
+Map<String, dynamic> _$$_PaymentResponseDtoToJson(
+        _$_PaymentResponseDto instance) =>
+    <String, dynamic>{
+      'sessionId': instance.sessionId,
+      'paymentId': instance.paymentId,
+      'liveMode': instance.liveMode,
+    };
+
 _$_ProjectDetailResponseDto _$$_ProjectDetailResponseDtoFromJson(
         Map<String, dynamic> json) =>
     _$_ProjectDetailResponseDto(

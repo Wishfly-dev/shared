@@ -486,6 +486,324 @@ abstract class _RegisterRequestDto implements RegisterRequestDto {
       throw _privateConstructorUsedError;
 }
 
+PaymentRequestDto _$PaymentRequestDtoFromJson(Map<String, dynamic> json) {
+  return _PaymentRequestDto.fromJson(json);
+}
+
+/// @nodoc
+mixin _$PaymentRequestDto {
+  String get priceId => throw _privateConstructorUsedError;
+  bool get liveMode => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PaymentRequestDtoCopyWith<PaymentRequestDto> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PaymentRequestDtoCopyWith<$Res> {
+  factory $PaymentRequestDtoCopyWith(
+          PaymentRequestDto value, $Res Function(PaymentRequestDto) then) =
+      _$PaymentRequestDtoCopyWithImpl<$Res, PaymentRequestDto>;
+  @useResult
+  $Res call({String priceId, bool liveMode});
+}
+
+/// @nodoc
+class _$PaymentRequestDtoCopyWithImpl<$Res, $Val extends PaymentRequestDto>
+    implements $PaymentRequestDtoCopyWith<$Res> {
+  _$PaymentRequestDtoCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? priceId = null,
+    Object? liveMode = null,
+  }) {
+    return _then(_value.copyWith(
+      priceId: null == priceId
+          ? _value.priceId
+          : priceId // ignore: cast_nullable_to_non_nullable
+              as String,
+      liveMode: null == liveMode
+          ? _value.liveMode
+          : liveMode // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_PaymentRequestDtoCopyWith<$Res>
+    implements $PaymentRequestDtoCopyWith<$Res> {
+  factory _$$_PaymentRequestDtoCopyWith(_$_PaymentRequestDto value,
+          $Res Function(_$_PaymentRequestDto) then) =
+      __$$_PaymentRequestDtoCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String priceId, bool liveMode});
+}
+
+/// @nodoc
+class __$$_PaymentRequestDtoCopyWithImpl<$Res>
+    extends _$PaymentRequestDtoCopyWithImpl<$Res, _$_PaymentRequestDto>
+    implements _$$_PaymentRequestDtoCopyWith<$Res> {
+  __$$_PaymentRequestDtoCopyWithImpl(
+      _$_PaymentRequestDto _value, $Res Function(_$_PaymentRequestDto) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? priceId = null,
+    Object? liveMode = null,
+  }) {
+    return _then(_$_PaymentRequestDto(
+      priceId: null == priceId
+          ? _value.priceId
+          : priceId // ignore: cast_nullable_to_non_nullable
+              as String,
+      liveMode: null == liveMode
+          ? _value.liveMode
+          : liveMode // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PaymentRequestDto implements _PaymentRequestDto {
+  const _$_PaymentRequestDto({required this.priceId, required this.liveMode});
+
+  factory _$_PaymentRequestDto.fromJson(Map<String, dynamic> json) =>
+      _$$_PaymentRequestDtoFromJson(json);
+
+  @override
+  final String priceId;
+  @override
+  final bool liveMode;
+
+  @override
+  String toString() {
+    return 'PaymentRequestDto(priceId: $priceId, liveMode: $liveMode)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PaymentRequestDto &&
+            (identical(other.priceId, priceId) || other.priceId == priceId) &&
+            (identical(other.liveMode, liveMode) ||
+                other.liveMode == liveMode));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, priceId, liveMode);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_PaymentRequestDtoCopyWith<_$_PaymentRequestDto> get copyWith =>
+      __$$_PaymentRequestDtoCopyWithImpl<_$_PaymentRequestDto>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PaymentRequestDtoToJson(
+      this,
+    );
+  }
+}
+
+abstract class _PaymentRequestDto implements PaymentRequestDto {
+  const factory _PaymentRequestDto(
+      {required final String priceId,
+      required final bool liveMode}) = _$_PaymentRequestDto;
+
+  factory _PaymentRequestDto.fromJson(Map<String, dynamic> json) =
+      _$_PaymentRequestDto.fromJson;
+
+  @override
+  String get priceId;
+  @override
+  bool get liveMode;
+  @override
+  @JsonKey(ignore: true)
+  _$$_PaymentRequestDtoCopyWith<_$_PaymentRequestDto> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+UpdatePaymentRequestDto _$UpdatePaymentRequestDtoFromJson(
+    Map<String, dynamic> json) {
+  return _UpdatePaymentRequestDto.fromJson(json);
+}
+
+/// @nodoc
+mixin _$UpdatePaymentRequestDto {
+  String get paymentId => throw _privateConstructorUsedError;
+  bool get sessionId => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $UpdatePaymentRequestDtoCopyWith<UpdatePaymentRequestDto> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $UpdatePaymentRequestDtoCopyWith<$Res> {
+  factory $UpdatePaymentRequestDtoCopyWith(UpdatePaymentRequestDto value,
+          $Res Function(UpdatePaymentRequestDto) then) =
+      _$UpdatePaymentRequestDtoCopyWithImpl<$Res, UpdatePaymentRequestDto>;
+  @useResult
+  $Res call({String paymentId, bool sessionId});
+}
+
+/// @nodoc
+class _$UpdatePaymentRequestDtoCopyWithImpl<$Res,
+        $Val extends UpdatePaymentRequestDto>
+    implements $UpdatePaymentRequestDtoCopyWith<$Res> {
+  _$UpdatePaymentRequestDtoCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? paymentId = null,
+    Object? sessionId = null,
+  }) {
+    return _then(_value.copyWith(
+      paymentId: null == paymentId
+          ? _value.paymentId
+          : paymentId // ignore: cast_nullable_to_non_nullable
+              as String,
+      sessionId: null == sessionId
+          ? _value.sessionId
+          : sessionId // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_UpdatePaymentRequestDtoCopyWith<$Res>
+    implements $UpdatePaymentRequestDtoCopyWith<$Res> {
+  factory _$$_UpdatePaymentRequestDtoCopyWith(_$_UpdatePaymentRequestDto value,
+          $Res Function(_$_UpdatePaymentRequestDto) then) =
+      __$$_UpdatePaymentRequestDtoCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String paymentId, bool sessionId});
+}
+
+/// @nodoc
+class __$$_UpdatePaymentRequestDtoCopyWithImpl<$Res>
+    extends _$UpdatePaymentRequestDtoCopyWithImpl<$Res,
+        _$_UpdatePaymentRequestDto>
+    implements _$$_UpdatePaymentRequestDtoCopyWith<$Res> {
+  __$$_UpdatePaymentRequestDtoCopyWithImpl(_$_UpdatePaymentRequestDto _value,
+      $Res Function(_$_UpdatePaymentRequestDto) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? paymentId = null,
+    Object? sessionId = null,
+  }) {
+    return _then(_$_UpdatePaymentRequestDto(
+      paymentId: null == paymentId
+          ? _value.paymentId
+          : paymentId // ignore: cast_nullable_to_non_nullable
+              as String,
+      sessionId: null == sessionId
+          ? _value.sessionId
+          : sessionId // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_UpdatePaymentRequestDto implements _UpdatePaymentRequestDto {
+  const _$_UpdatePaymentRequestDto(
+      {required this.paymentId, required this.sessionId});
+
+  factory _$_UpdatePaymentRequestDto.fromJson(Map<String, dynamic> json) =>
+      _$$_UpdatePaymentRequestDtoFromJson(json);
+
+  @override
+  final String paymentId;
+  @override
+  final bool sessionId;
+
+  @override
+  String toString() {
+    return 'UpdatePaymentRequestDto(paymentId: $paymentId, sessionId: $sessionId)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_UpdatePaymentRequestDto &&
+            (identical(other.paymentId, paymentId) ||
+                other.paymentId == paymentId) &&
+            (identical(other.sessionId, sessionId) ||
+                other.sessionId == sessionId));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, paymentId, sessionId);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_UpdatePaymentRequestDtoCopyWith<_$_UpdatePaymentRequestDto>
+      get copyWith =>
+          __$$_UpdatePaymentRequestDtoCopyWithImpl<_$_UpdatePaymentRequestDto>(
+              this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_UpdatePaymentRequestDtoToJson(
+      this,
+    );
+  }
+}
+
+abstract class _UpdatePaymentRequestDto implements UpdatePaymentRequestDto {
+  const factory _UpdatePaymentRequestDto(
+      {required final String paymentId,
+      required final bool sessionId}) = _$_UpdatePaymentRequestDto;
+
+  factory _UpdatePaymentRequestDto.fromJson(Map<String, dynamic> json) =
+      _$_UpdatePaymentRequestDto.fromJson;
+
+  @override
+  String get paymentId;
+  @override
+  bool get sessionId;
+  @override
+  @JsonKey(ignore: true)
+  _$$_UpdatePaymentRequestDtoCopyWith<_$_UpdatePaymentRequestDto>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
 ProjectRequestDto _$ProjectRequestDtoFromJson(Map<String, dynamic> json) {
   return _ProjectRequestDto.fromJson(json);
 }

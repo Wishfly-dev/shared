@@ -1,5 +1,10 @@
 import 'dart:io';
 
+enum FreemiumExceptionType {
+  maxWishes,
+  maxProjects,
+}
+
 class WishflyException implements Exception {
   final String message;
   final int status;
@@ -56,7 +61,8 @@ class ResourceNotFoundException implements WishflyException {
 
 class FreemiumAccountException implements WishflyException {
   final String _message;
-  FreemiumAccountException(this._message);
+  final FreemiumExceptionType? type;
+  FreemiumAccountException(this._message, [this.type]);
 
   @override
   final int status = HttpStatus.conflict;

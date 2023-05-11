@@ -46,6 +46,33 @@ Map<String, dynamic> _$$_RegisterRequestDtoToJson(
       'username': instance.username,
     };
 
+_$_PaymentRequestDto _$$_PaymentRequestDtoFromJson(Map<String, dynamic> json) =>
+    _$_PaymentRequestDto(
+      priceId: json['priceId'] as String,
+      liveMode: json['liveMode'] as bool,
+    );
+
+Map<String, dynamic> _$$_PaymentRequestDtoToJson(
+        _$_PaymentRequestDto instance) =>
+    <String, dynamic>{
+      'priceId': instance.priceId,
+      'liveMode': instance.liveMode,
+    };
+
+_$_UpdatePaymentRequestDto _$$_UpdatePaymentRequestDtoFromJson(
+        Map<String, dynamic> json) =>
+    _$_UpdatePaymentRequestDto(
+      paymentId: json['paymentId'] as String,
+      sessionId: json['sessionId'] as bool,
+    );
+
+Map<String, dynamic> _$$_UpdatePaymentRequestDtoToJson(
+        _$_UpdatePaymentRequestDto instance) =>
+    <String, dynamic>{
+      'paymentId': instance.paymentId,
+      'sessionId': instance.sessionId,
+    };
+
 _$_ProjectRequestDto _$$_ProjectRequestDtoFromJson(Map<String, dynamic> json) =>
     _$_ProjectRequestDto(
       title: json['title'] as String,

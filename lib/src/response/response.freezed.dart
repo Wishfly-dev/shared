@@ -326,6 +326,184 @@ abstract class _FailureDto implements FailureDto {
       throw _privateConstructorUsedError;
 }
 
+PaymentResponseDto _$PaymentResponseDtoFromJson(Map<String, dynamic> json) {
+  return _PaymentResponseDto.fromJson(json);
+}
+
+/// @nodoc
+mixin _$PaymentResponseDto {
+  String get sessionId => throw _privateConstructorUsedError;
+  String get paymentId => throw _privateConstructorUsedError;
+  bool get liveMode => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PaymentResponseDtoCopyWith<PaymentResponseDto> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PaymentResponseDtoCopyWith<$Res> {
+  factory $PaymentResponseDtoCopyWith(
+          PaymentResponseDto value, $Res Function(PaymentResponseDto) then) =
+      _$PaymentResponseDtoCopyWithImpl<$Res, PaymentResponseDto>;
+  @useResult
+  $Res call({String sessionId, String paymentId, bool liveMode});
+}
+
+/// @nodoc
+class _$PaymentResponseDtoCopyWithImpl<$Res, $Val extends PaymentResponseDto>
+    implements $PaymentResponseDtoCopyWith<$Res> {
+  _$PaymentResponseDtoCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? sessionId = null,
+    Object? paymentId = null,
+    Object? liveMode = null,
+  }) {
+    return _then(_value.copyWith(
+      sessionId: null == sessionId
+          ? _value.sessionId
+          : sessionId // ignore: cast_nullable_to_non_nullable
+              as String,
+      paymentId: null == paymentId
+          ? _value.paymentId
+          : paymentId // ignore: cast_nullable_to_non_nullable
+              as String,
+      liveMode: null == liveMode
+          ? _value.liveMode
+          : liveMode // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_PaymentResponseDtoCopyWith<$Res>
+    implements $PaymentResponseDtoCopyWith<$Res> {
+  factory _$$_PaymentResponseDtoCopyWith(_$_PaymentResponseDto value,
+          $Res Function(_$_PaymentResponseDto) then) =
+      __$$_PaymentResponseDtoCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String sessionId, String paymentId, bool liveMode});
+}
+
+/// @nodoc
+class __$$_PaymentResponseDtoCopyWithImpl<$Res>
+    extends _$PaymentResponseDtoCopyWithImpl<$Res, _$_PaymentResponseDto>
+    implements _$$_PaymentResponseDtoCopyWith<$Res> {
+  __$$_PaymentResponseDtoCopyWithImpl(
+      _$_PaymentResponseDto _value, $Res Function(_$_PaymentResponseDto) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? sessionId = null,
+    Object? paymentId = null,
+    Object? liveMode = null,
+  }) {
+    return _then(_$_PaymentResponseDto(
+      sessionId: null == sessionId
+          ? _value.sessionId
+          : sessionId // ignore: cast_nullable_to_non_nullable
+              as String,
+      paymentId: null == paymentId
+          ? _value.paymentId
+          : paymentId // ignore: cast_nullable_to_non_nullable
+              as String,
+      liveMode: null == liveMode
+          ? _value.liveMode
+          : liveMode // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PaymentResponseDto implements _PaymentResponseDto {
+  const _$_PaymentResponseDto(
+      {required this.sessionId,
+      required this.paymentId,
+      required this.liveMode});
+
+  factory _$_PaymentResponseDto.fromJson(Map<String, dynamic> json) =>
+      _$$_PaymentResponseDtoFromJson(json);
+
+  @override
+  final String sessionId;
+  @override
+  final String paymentId;
+  @override
+  final bool liveMode;
+
+  @override
+  String toString() {
+    return 'PaymentResponseDto(sessionId: $sessionId, paymentId: $paymentId, liveMode: $liveMode)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PaymentResponseDto &&
+            (identical(other.sessionId, sessionId) ||
+                other.sessionId == sessionId) &&
+            (identical(other.paymentId, paymentId) ||
+                other.paymentId == paymentId) &&
+            (identical(other.liveMode, liveMode) ||
+                other.liveMode == liveMode));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, sessionId, paymentId, liveMode);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_PaymentResponseDtoCopyWith<_$_PaymentResponseDto> get copyWith =>
+      __$$_PaymentResponseDtoCopyWithImpl<_$_PaymentResponseDto>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PaymentResponseDtoToJson(
+      this,
+    );
+  }
+}
+
+abstract class _PaymentResponseDto implements PaymentResponseDto {
+  const factory _PaymentResponseDto(
+      {required final String sessionId,
+      required final String paymentId,
+      required final bool liveMode}) = _$_PaymentResponseDto;
+
+  factory _PaymentResponseDto.fromJson(Map<String, dynamic> json) =
+      _$_PaymentResponseDto.fromJson;
+
+  @override
+  String get sessionId;
+  @override
+  String get paymentId;
+  @override
+  bool get liveMode;
+  @override
+  @JsonKey(ignore: true)
+  _$$_PaymentResponseDtoCopyWith<_$_PaymentResponseDto> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
 ProjectDetailResponseDto _$ProjectDetailResponseDtoFromJson(
     Map<String, dynamic> json) {
   return _ProjectDetailResponseDto.fromJson(json);
