@@ -7,5 +7,6 @@ class UpdatePaymentRequestDto with _$UpdatePaymentRequestDto {
     required bool sessionId,
   }) = _UpdatePaymentRequestDto;
 
-  factory UpdatePaymentRequestDto.fromJson(Map<String, Object?> json) => _$UpdatePaymentRequestDtoFromJson(json);
+  factory UpdatePaymentRequestDto.fromJson(Map<String, Object?> json) =>
+      _$UpdatePaymentRequestDtoFromJson(json);
 }

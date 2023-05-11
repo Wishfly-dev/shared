@@ -8,5 +8,6 @@ class PaymentResponseDto with _$PaymentResponseDto {
     required bool liveMode,
   }) = _PaymentResponseDto;
 
-  factory PaymentResponseDto.fromJson(Map<String, Object?> json) => _$PaymentResponseDtoFromJson(json);
+  factory PaymentResponseDto.fromJson(Map<String, Object?> json) =>
+      _$PaymentResponseDtoFromJson(json);
 }

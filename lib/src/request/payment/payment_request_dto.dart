@@ -7,5 +7,6 @@ class PaymentRequestDto with _$PaymentRequestDto {
     required bool liveMode,
   }) = _PaymentRequestDto;
 
-  factory PaymentRequestDto.fromJson(Map<String, Object?> json) => _$PaymentRequestDtoFromJson(json);
+  factory PaymentRequestDto.fromJson(Map<String, Object?> json) =>
+      _$PaymentRequestDtoFromJson(json);
 }
