@@ -1,3 +1,5 @@
+## 0.1.3+1
+- fix: update payment request
 ## 0.1.3
 - feat: added payment request / response classes
 ## 0.1.2+2

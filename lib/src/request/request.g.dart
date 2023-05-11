@@ -63,7 +63,7 @@ _$_UpdatePaymentRequestDto _$$_UpdatePaymentRequestDtoFromJson(
         Map<String, dynamic> json) =>
     _$_UpdatePaymentRequestDto(
       paymentId: json['paymentId'] as String,
-      sessionId: json['sessionId'] as bool,
+      sessionId: json['sessionId'] as String,
     );
 
 Map<String, dynamic> _$$_UpdatePaymentRequestDtoToJson(

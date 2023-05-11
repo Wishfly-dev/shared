@@ -650,7 +650,7 @@ UpdatePaymentRequestDto _$UpdatePaymentRequestDtoFromJson(
 /// @nodoc
 mixin _$UpdatePaymentRequestDto {
   String get paymentId => throw _privateConstructorUsedError;
-  bool get sessionId => throw _privateConstructorUsedError;
+  String get sessionId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -664,7 +664,7 @@ abstract class $UpdatePaymentRequestDtoCopyWith<$Res> {
           $Res Function(UpdatePaymentRequestDto) then) =
       _$UpdatePaymentRequestDtoCopyWithImpl<$Res, UpdatePaymentRequestDto>;
   @useResult
-  $Res call({String paymentId, bool sessionId});
+  $Res call({String paymentId, String sessionId});
 }
 
 /// @nodoc
@@ -692,7 +692,7 @@ class _$UpdatePaymentRequestDtoCopyWithImpl<$Res,
       sessionId: null == sessionId
           ? _value.sessionId
           : sessionId // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as String,
     ) as $Val);
   }
 }
@@ -705,7 +705,7 @@ abstract class _$$_UpdatePaymentRequestDtoCopyWith<$Res>
       __$$_UpdatePaymentRequestDtoCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String paymentId, bool sessionId});
+  $Res call({String paymentId, String sessionId});
 }
 
 /// @nodoc
@@ -731,7 +731,7 @@ class __$$_UpdatePaymentRequestDtoCopyWithImpl<$Res>
       sessionId: null == sessionId
           ? _value.sessionId
           : sessionId // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as String,
     ));
   }
 }
@@ -748,7 +748,7 @@ class _$_UpdatePaymentRequestDto implements _UpdatePaymentRequestDto {
   @override
   final String paymentId;
   @override
-  final bool sessionId;
+  final String sessionId;
 
   @override
   String toString() {
@@ -789,7 +789,7 @@ class _$_UpdatePaymentRequestDto implements _UpdatePaymentRequestDto {
 abstract class _UpdatePaymentRequestDto implements UpdatePaymentRequestDto {
   const factory _UpdatePaymentRequestDto(
       {required final String paymentId,
-      required final bool sessionId}) = _$_UpdatePaymentRequestDto;
+      required final String sessionId}) = _$_UpdatePaymentRequestDto;
 
   factory _UpdatePaymentRequestDto.fromJson(Map<String, dynamic> json) =
       _$_UpdatePaymentRequestDto.fromJson;
@@ -797,7 +797,7 @@ abstract class _UpdatePaymentRequestDto implements UpdatePaymentRequestDto {
   @override
   String get paymentId;
   @override
-  bool get sessionId;
+  String get sessionId;
   @override
   @JsonKey(ignore: true)
   _$$_UpdatePaymentRequestDtoCopyWith<_$_UpdatePaymentRequestDto>

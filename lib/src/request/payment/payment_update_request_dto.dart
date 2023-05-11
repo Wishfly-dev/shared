@@ -4,7 +4,7 @@ part of '../request.dart';
 class UpdatePaymentRequestDto with _$UpdatePaymentRequestDto {
   const factory UpdatePaymentRequestDto({
     required String paymentId,
-    required bool sessionId,
+    required String sessionId,
   }) = _UpdatePaymentRequestDto;
 
   factory UpdatePaymentRequestDto.fromJson(Map<String, Object?> json) =>
