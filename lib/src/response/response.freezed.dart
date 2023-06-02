@@ -647,6 +647,234 @@ abstract class _ProjectDetailResponseDto implements ProjectDetailResponseDto {
       get copyWith => throw _privateConstructorUsedError;
 }
 
+ProjectLabelResponseDto _$ProjectLabelResponseDtoFromJson(
+    Map<String, dynamic> json) {
+  return _ProjectLabelResponseDto.fromJson(json);
+}
+
+/// @nodoc
+mixin _$ProjectLabelResponseDto {
+  String get id => throw _privateConstructorUsedError;
+  String get title => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
+  String get color => throw _privateConstructorUsedError;
+  bool get isDefault => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ProjectLabelResponseDtoCopyWith<ProjectLabelResponseDto> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $ProjectLabelResponseDtoCopyWith<$Res> {
+  factory $ProjectLabelResponseDtoCopyWith(ProjectLabelResponseDto value,
+          $Res Function(ProjectLabelResponseDto) then) =
+      _$ProjectLabelResponseDtoCopyWithImpl<$Res, ProjectLabelResponseDto>;
+  @useResult
+  $Res call(
+      {String id,
+      String title,
+      String description,
+      String color,
+      bool isDefault});
+}
+
+/// @nodoc
+class _$ProjectLabelResponseDtoCopyWithImpl<$Res,
+        $Val extends ProjectLabelResponseDto>
+    implements $ProjectLabelResponseDtoCopyWith<$Res> {
+  _$ProjectLabelResponseDtoCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? color = null,
+    Object? isDefault = null,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      color: null == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as String,
+      isDefault: null == isDefault
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_ProjectLabelResponseDtoCopyWith<$Res>
+    implements $ProjectLabelResponseDtoCopyWith<$Res> {
+  factory _$$_ProjectLabelResponseDtoCopyWith(_$_ProjectLabelResponseDto value,
+          $Res Function(_$_ProjectLabelResponseDto) then) =
+      __$$_ProjectLabelResponseDtoCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String title,
+      String description,
+      String color,
+      bool isDefault});
+}
+
+/// @nodoc
+class __$$_ProjectLabelResponseDtoCopyWithImpl<$Res>
+    extends _$ProjectLabelResponseDtoCopyWithImpl<$Res,
+        _$_ProjectLabelResponseDto>
+    implements _$$_ProjectLabelResponseDtoCopyWith<$Res> {
+  __$$_ProjectLabelResponseDtoCopyWithImpl(_$_ProjectLabelResponseDto _value,
+      $Res Function(_$_ProjectLabelResponseDto) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? color = null,
+    Object? isDefault = null,
+  }) {
+    return _then(_$_ProjectLabelResponseDto(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      color: null == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as String,
+      isDefault: null == isDefault
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_ProjectLabelResponseDto implements _ProjectLabelResponseDto {
+  const _$_ProjectLabelResponseDto(
+      {required this.id,
+      required this.title,
+      required this.description,
+      required this.color,
+      required this.isDefault});
+
+  factory _$_ProjectLabelResponseDto.fromJson(Map<String, dynamic> json) =>
+      _$$_ProjectLabelResponseDtoFromJson(json);
+
+  @override
+  final String id;
+  @override
+  final String title;
+  @override
+  final String description;
+  @override
+  final String color;
+  @override
+  final bool isDefault;
+
+  @override
+  String toString() {
+    return 'ProjectLabelResponseDto(id: $id, title: $title, description: $description, color: $color, isDefault: $isDefault)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_ProjectLabelResponseDto &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.color, color) || other.color == color) &&
+            (identical(other.isDefault, isDefault) ||
+                other.isDefault == isDefault));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, id, title, description, color, isDefault);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ProjectLabelResponseDtoCopyWith<_$_ProjectLabelResponseDto>
+      get copyWith =>
+          __$$_ProjectLabelResponseDtoCopyWithImpl<_$_ProjectLabelResponseDto>(
+              this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_ProjectLabelResponseDtoToJson(
+      this,
+    );
+  }
+}
+
+abstract class _ProjectLabelResponseDto implements ProjectLabelResponseDto {
+  const factory _ProjectLabelResponseDto(
+      {required final String id,
+      required final String title,
+      required final String description,
+      required final String color,
+      required final bool isDefault}) = _$_ProjectLabelResponseDto;
+
+  factory _ProjectLabelResponseDto.fromJson(Map<String, dynamic> json) =
+      _$_ProjectLabelResponseDto.fromJson;
+
+  @override
+  String get id;
+  @override
+  String get title;
+  @override
+  String get description;
+  @override
+  String get color;
+  @override
+  bool get isDefault;
+  @override
+  @JsonKey(ignore: true)
+  _$$_ProjectLabelResponseDtoCopyWith<_$_ProjectLabelResponseDto>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
 ProjectResponseDto _$ProjectResponseDtoFromJson(Map<String, dynamic> json) {
   return _ProjectResponseDto.fromJson(json);
 }
@@ -1154,6 +1382,8 @@ mixin _$WishResponseDto {
   int get votes => throw _privateConstructorUsedError;
   DateTime get createdAt => throw _privateConstructorUsedError;
   String get state => throw _privateConstructorUsedError;
+  List<ProjectLabelResponseDto> get labels =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1173,7 +1403,8 @@ abstract class $WishResponseDtoCopyWith<$Res> {
       String description,
       int votes,
       DateTime createdAt,
-      String state});
+      String state,
+      List<ProjectLabelResponseDto> labels});
 }
 
 /// @nodoc
@@ -1195,6 +1426,7 @@ class _$WishResponseDtoCopyWithImpl<$Res, $Val extends WishResponseDto>
     Object? votes = null,
     Object? createdAt = null,
     Object? state = null,
+    Object? labels = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -1221,6 +1453,10 @@ class _$WishResponseDtoCopyWithImpl<$Res, $Val extends WishResponseDto>
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
               as String,
+      labels: null == labels
+          ? _value.labels
+          : labels // ignore: cast_nullable_to_non_nullable
+              as List<ProjectLabelResponseDto>,
     ) as $Val);
   }
 }
@@ -1239,7 +1475,8 @@ abstract class _$$_WishResponseDtoCopyWith<$Res>
       String description,
       int votes,
       DateTime createdAt,
-      String state});
+      String state,
+      List<ProjectLabelResponseDto> labels});
 }
 
 /// @nodoc
@@ -1259,6 +1496,7 @@ class __$$_WishResponseDtoCopyWithImpl<$Res>
     Object? votes = null,
     Object? createdAt = null,
     Object? state = null,
+    Object? labels = null,
   }) {
     return _then(_$_WishResponseDto(
       id: null == id
@@ -1285,6 +1523,10 @@ class __$$_WishResponseDtoCopyWithImpl<$Res>
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
               as String,
+      labels: null == labels
+          ? _value._labels
+          : labels // ignore: cast_nullable_to_non_nullable
+              as List<ProjectLabelResponseDto>,
     ));
   }
 }
@@ -1298,7 +1540,9 @@ class _$_WishResponseDto implements _WishResponseDto {
       required this.description,
       required this.votes,
       required this.createdAt,
-      required this.state});
+      required this.state,
+      final List<ProjectLabelResponseDto> labels = const []})
+      : _labels = labels;
 
   factory _$_WishResponseDto.fromJson(Map<String, dynamic> json) =>
       _$$_WishResponseDtoFromJson(json);
@@ -1315,10 +1559,18 @@ class _$_WishResponseDto implements _WishResponseDto {
   final DateTime createdAt;
   @override
   final String state;
+  final List<ProjectLabelResponseDto> _labels;
+  @override
+  @JsonKey()
+  List<ProjectLabelResponseDto> get labels {
+    if (_labels is EqualUnmodifiableListView) return _labels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_labels);
+  }
 
   @override
   String toString() {
-    return 'WishResponseDto(id: $id, title: $title, description: $description, votes: $votes, createdAt: $createdAt, state: $state)';
+    return 'WishResponseDto(id: $id, title: $title, description: $description, votes: $votes, createdAt: $createdAt, state: $state, labels: $labels)';
   }
 
   @override
@@ -1333,13 +1585,14 @@ class _$_WishResponseDto implements _WishResponseDto {
             (identical(other.votes, votes) || other.votes == votes) &&
             (identical(other.createdAt, createdAt) ||
                 other.createdAt == createdAt) &&
-            (identical(other.state, state) || other.state == state));
+            (identical(other.state, state) || other.state == state) &&
+            const DeepCollectionEquality().equals(other._labels, _labels));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, title, description, votes, createdAt, state);
+  int get hashCode => Object.hash(runtimeType, id, title, description, votes,
+      createdAt, state, const DeepCollectionEquality().hash(_labels));
 
   @JsonKey(ignore: true)
   @override
@@ -1362,7 +1615,8 @@ abstract class _WishResponseDto implements WishResponseDto {
       required final String description,
       required final int votes,
       required final DateTime createdAt,
-      required final String state}) = _$_WishResponseDto;
+      required final String state,
+      final List<ProjectLabelResponseDto> labels}) = _$_WishResponseDto;
 
   factory _WishResponseDto.fromJson(Map<String, dynamic> json) =
       _$_WishResponseDto.fromJson;
@@ -1379,6 +1633,8 @@ abstract class _WishResponseDto implements WishResponseDto {
   DateTime get createdAt;
   @override
   String get state;
+  @override
+  List<ProjectLabelResponseDto> get labels;
   @override
   @JsonKey(ignore: true)
   _$$_WishResponseDtoCopyWith<_$_WishResponseDto> get copyWith =>

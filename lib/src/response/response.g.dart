@@ -58,6 +58,26 @@ Map<String, dynamic> _$$_ProjectDetailResponseDtoToJson(
       'currentPlan': instance.currentPlan,
     };
 
+_$_ProjectLabelResponseDto _$$_ProjectLabelResponseDtoFromJson(
+        Map<String, dynamic> json) =>
+    _$_ProjectLabelResponseDto(
+      id: json['id'] as String,
+      title: json['title'] as String,
+      description: json['description'] as String,
+      color: json['color'] as String,
+      isDefault: json['isDefault'] as bool,
+    );
+
+Map<String, dynamic> _$$_ProjectLabelResponseDtoToJson(
+        _$_ProjectLabelResponseDto instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'description': instance.description,
+      'color': instance.color,
+      'isDefault': instance.isDefault,
+    };
+
 _$_ProjectResponseDto _$$_ProjectResponseDtoFromJson(
         Map<String, dynamic> json) =>
     _$_ProjectResponseDto(
@@ -110,6 +130,11 @@ _$_WishResponseDto _$$_WishResponseDtoFromJson(Map<String, dynamic> json) =>
       votes: json['votes'] as int,
       createdAt: DateTime.parse(json['createdAt'] as String),
       state: json['state'] as String,
+      labels: (json['labels'] as List<dynamic>?)
+              ?.map((e) =>
+                  ProjectLabelResponseDto.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
     );
 
 Map<String, dynamic> _$$_WishResponseDtoToJson(_$_WishResponseDto instance) =>
@@ -120,4 +145,5 @@ Map<String, dynamic> _$$_WishResponseDtoToJson(_$_WishResponseDto instance) =>
       'votes': instance.votes,
       'createdAt': instance.createdAt.toIso8601String(),
       'state': instance.state,
+      'labels': instance.labels,
     };

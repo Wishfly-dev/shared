@@ -9,8 +9,8 @@ class WishResponseDto with _$WishResponseDto {
     required int votes,
     required DateTime createdAt,
     required String state,
+    @Default([]) List<ProjectLabelResponseDto> labels,
   }) = _WishResponseDto;
 
-  factory WishResponseDto.fromJson(Map<String, Object?> json) =>
-      _$WishResponseDtoFromJson(json);
+  factory WishResponseDto.fromJson(Map<String, Object?> json) => _$WishResponseDtoFromJson(json);
 }

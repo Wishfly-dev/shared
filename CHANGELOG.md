@@ -1,3 +1,6 @@
+## 0.2.0
+- feat: added project label response / request classes
+- feat: added label field to wish response class
 ## 0.1.3+1
 - fix: update payment request
 ## 0.1.3

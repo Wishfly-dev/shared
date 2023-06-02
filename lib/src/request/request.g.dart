@@ -73,6 +73,40 @@ Map<String, dynamic> _$$_UpdatePaymentRequestDtoToJson(
       'sessionId': instance.sessionId,
     };
 
+_$_CreateProjectLabelRequestDto _$$_CreateProjectLabelRequestDtoFromJson(
+        Map<String, dynamic> json) =>
+    _$_CreateProjectLabelRequestDto(
+      title: json['title'] as String,
+      description: json['description'] as String,
+      color: json['color'] as String,
+    );
+
+Map<String, dynamic> _$$_CreateProjectLabelRequestDtoToJson(
+        _$_CreateProjectLabelRequestDto instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'description': instance.description,
+      'color': instance.color,
+    };
+
+_$_UpdateProjectLabelRequestDto _$$_UpdateProjectLabelRequestDtoFromJson(
+        Map<String, dynamic> json) =>
+    _$_UpdateProjectLabelRequestDto(
+      id: json['id'] as String,
+      title: json['title'] as String?,
+      description: json['description'] as String?,
+      color: json['color'] as String?,
+    );
+
+Map<String, dynamic> _$$_UpdateProjectLabelRequestDtoToJson(
+        _$_UpdateProjectLabelRequestDto instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'description': instance.description,
+      'color': instance.color,
+    };
+
 _$_ProjectRequestDto _$$_ProjectRequestDtoFromJson(Map<String, dynamic> json) =>
     _$_ProjectRequestDto(
       title: json['title'] as String,
