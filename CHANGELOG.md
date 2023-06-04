@@ -1,3 +1,5 @@
+## 0.2.1
+- fix: divided create and update label request
 ## 0.2.0
 - feat: added project label response / request classes
 - feat: added label field to wish response class
@@ -10,7 +12,7 @@
 ## 0.1.2+1
 - fix: type of field in payment response
 ## 0.1.2
-- fix: missing field in payment reponse
+- fix: missing field in payment response
 - feat: added type to response
 ## 0.1.1
 - feat: added payment response / requests classes 

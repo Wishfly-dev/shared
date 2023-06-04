@@ -10,5 +10,6 @@ class ProjectLabelResponseDto with _$ProjectLabelResponseDto {
     required bool isDefault,
   }) = _ProjectLabelResponseDto;
 
-  factory ProjectLabelResponseDto.fromJson(Map<String, Object?> json) => _$ProjectLabelResponseDtoFromJson(json);
+  factory ProjectLabelResponseDto.fromJson(Map<String, Object?> json) =>
+      _$ProjectLabelResponseDtoFromJson(json);
 }

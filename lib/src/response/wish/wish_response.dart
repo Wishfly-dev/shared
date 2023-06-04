@@ -12,5 +12,6 @@ class WishResponseDto with _$WishResponseDto {
     @Default([]) List<ProjectLabelResponseDto> labels,
   }) = _WishResponseDto;
 
-  factory WishResponseDto.fromJson(Map<String, Object?> json) => _$WishResponseDtoFromJson(json);
+  factory WishResponseDto.fromJson(Map<String, Object?> json) =>
+      _$WishResponseDtoFromJson(json);
 }

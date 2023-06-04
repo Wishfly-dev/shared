@@ -986,208 +986,6 @@ abstract class _CreateProjectLabelRequestDto
       get copyWith => throw _privateConstructorUsedError;
 }
 
-UpdateProjectLabelRequestDto _$UpdateProjectLabelRequestDtoFromJson(
-    Map<String, dynamic> json) {
-  return _UpdateProjectLabelRequestDto.fromJson(json);
-}
-
-/// @nodoc
-mixin _$UpdateProjectLabelRequestDto {
-  String get id => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  String? get description => throw _privateConstructorUsedError;
-  String? get color => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $UpdateProjectLabelRequestDtoCopyWith<UpdateProjectLabelRequestDto>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $UpdateProjectLabelRequestDtoCopyWith<$Res> {
-  factory $UpdateProjectLabelRequestDtoCopyWith(
-          UpdateProjectLabelRequestDto value,
-          $Res Function(UpdateProjectLabelRequestDto) then) =
-      _$UpdateProjectLabelRequestDtoCopyWithImpl<$Res,
-          UpdateProjectLabelRequestDto>;
-  @useResult
-  $Res call({String id, String? title, String? description, String? color});
-}
-
-/// @nodoc
-class _$UpdateProjectLabelRequestDtoCopyWithImpl<$Res,
-        $Val extends UpdateProjectLabelRequestDto>
-    implements $UpdateProjectLabelRequestDtoCopyWith<$Res> {
-  _$UpdateProjectLabelRequestDtoCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? color = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      color: freezed == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$_UpdateProjectLabelRequestDtoCopyWith<$Res>
-    implements $UpdateProjectLabelRequestDtoCopyWith<$Res> {
-  factory _$$_UpdateProjectLabelRequestDtoCopyWith(
-          _$_UpdateProjectLabelRequestDto value,
-          $Res Function(_$_UpdateProjectLabelRequestDto) then) =
-      __$$_UpdateProjectLabelRequestDtoCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String id, String? title, String? description, String? color});
-}
-
-/// @nodoc
-class __$$_UpdateProjectLabelRequestDtoCopyWithImpl<$Res>
-    extends _$UpdateProjectLabelRequestDtoCopyWithImpl<$Res,
-        _$_UpdateProjectLabelRequestDto>
-    implements _$$_UpdateProjectLabelRequestDtoCopyWith<$Res> {
-  __$$_UpdateProjectLabelRequestDtoCopyWithImpl(
-      _$_UpdateProjectLabelRequestDto _value,
-      $Res Function(_$_UpdateProjectLabelRequestDto) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? color = freezed,
-  }) {
-    return _then(_$_UpdateProjectLabelRequestDto(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      color: freezed == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_UpdateProjectLabelRequestDto implements _UpdateProjectLabelRequestDto {
-  const _$_UpdateProjectLabelRequestDto(
-      {required this.id,
-      required this.title,
-      required this.description,
-      required this.color});
-
-  factory _$_UpdateProjectLabelRequestDto.fromJson(Map<String, dynamic> json) =>
-      _$$_UpdateProjectLabelRequestDtoFromJson(json);
-
-  @override
-  final String id;
-  @override
-  final String? title;
-  @override
-  final String? description;
-  @override
-  final String? color;
-
-  @override
-  String toString() {
-    return 'UpdateProjectLabelRequestDto(id: $id, title: $title, description: $description, color: $color)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_UpdateProjectLabelRequestDto &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.color, color) || other.color == color));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, title, description, color);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_UpdateProjectLabelRequestDtoCopyWith<_$_UpdateProjectLabelRequestDto>
-      get copyWith => __$$_UpdateProjectLabelRequestDtoCopyWithImpl<
-          _$_UpdateProjectLabelRequestDto>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_UpdateProjectLabelRequestDtoToJson(
-      this,
-    );
-  }
-}
-
-abstract class _UpdateProjectLabelRequestDto
-    implements UpdateProjectLabelRequestDto {
-  const factory _UpdateProjectLabelRequestDto(
-      {required final String id,
-      required final String? title,
-      required final String? description,
-      required final String? color}) = _$_UpdateProjectLabelRequestDto;
-
-  factory _UpdateProjectLabelRequestDto.fromJson(Map<String, dynamic> json) =
-      _$_UpdateProjectLabelRequestDto.fromJson;
-
-  @override
-  String get id;
-  @override
-  String? get title;
-  @override
-  String? get description;
-  @override
-  String? get color;
-  @override
-  @JsonKey(ignore: true)
-  _$$_UpdateProjectLabelRequestDtoCopyWith<_$_UpdateProjectLabelRequestDto>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
 ProjectRequestDto _$ProjectRequestDtoFromJson(Map<String, dynamic> json) {
   return _ProjectRequestDto.fromJson(json);
 }
@@ -1342,6 +1140,188 @@ abstract class _ProjectRequestDto implements ProjectRequestDto {
   @JsonKey(ignore: true)
   _$$_ProjectRequestDtoCopyWith<_$_ProjectRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+UpdateProjectLabelRequestDto _$UpdateProjectLabelRequestDtoFromJson(
+    Map<String, dynamic> json) {
+  return _UpdateProjectLabelRequestDto.fromJson(json);
+}
+
+/// @nodoc
+mixin _$UpdateProjectLabelRequestDto {
+  String get title => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
+  String get color => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $UpdateProjectLabelRequestDtoCopyWith<UpdateProjectLabelRequestDto>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $UpdateProjectLabelRequestDtoCopyWith<$Res> {
+  factory $UpdateProjectLabelRequestDtoCopyWith(
+          UpdateProjectLabelRequestDto value,
+          $Res Function(UpdateProjectLabelRequestDto) then) =
+      _$UpdateProjectLabelRequestDtoCopyWithImpl<$Res,
+          UpdateProjectLabelRequestDto>;
+  @useResult
+  $Res call({String title, String description, String color});
+}
+
+/// @nodoc
+class _$UpdateProjectLabelRequestDtoCopyWithImpl<$Res,
+        $Val extends UpdateProjectLabelRequestDto>
+    implements $UpdateProjectLabelRequestDtoCopyWith<$Res> {
+  _$UpdateProjectLabelRequestDtoCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? title = null,
+    Object? description = null,
+    Object? color = null,
+  }) {
+    return _then(_value.copyWith(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      color: null == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_UpdateProjectLabelRequestDtoCopyWith<$Res>
+    implements $UpdateProjectLabelRequestDtoCopyWith<$Res> {
+  factory _$$_UpdateProjectLabelRequestDtoCopyWith(
+          _$_UpdateProjectLabelRequestDto value,
+          $Res Function(_$_UpdateProjectLabelRequestDto) then) =
+      __$$_UpdateProjectLabelRequestDtoCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String title, String description, String color});
+}
+
+/// @nodoc
+class __$$_UpdateProjectLabelRequestDtoCopyWithImpl<$Res>
+    extends _$UpdateProjectLabelRequestDtoCopyWithImpl<$Res,
+        _$_UpdateProjectLabelRequestDto>
+    implements _$$_UpdateProjectLabelRequestDtoCopyWith<$Res> {
+  __$$_UpdateProjectLabelRequestDtoCopyWithImpl(
+      _$_UpdateProjectLabelRequestDto _value,
+      $Res Function(_$_UpdateProjectLabelRequestDto) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? title = null,
+    Object? description = null,
+    Object? color = null,
+  }) {
+    return _then(_$_UpdateProjectLabelRequestDto(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      color: null == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_UpdateProjectLabelRequestDto implements _UpdateProjectLabelRequestDto {
+  const _$_UpdateProjectLabelRequestDto(
+      {required this.title, required this.description, required this.color});
+
+  factory _$_UpdateProjectLabelRequestDto.fromJson(Map<String, dynamic> json) =>
+      _$$_UpdateProjectLabelRequestDtoFromJson(json);
+
+  @override
+  final String title;
+  @override
+  final String description;
+  @override
+  final String color;
+
+  @override
+  String toString() {
+    return 'UpdateProjectLabelRequestDto(title: $title, description: $description, color: $color)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_UpdateProjectLabelRequestDto &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.color, color) || other.color == color));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, title, description, color);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_UpdateProjectLabelRequestDtoCopyWith<_$_UpdateProjectLabelRequestDto>
+      get copyWith => __$$_UpdateProjectLabelRequestDtoCopyWithImpl<
+          _$_UpdateProjectLabelRequestDto>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_UpdateProjectLabelRequestDtoToJson(
+      this,
+    );
+  }
+}
+
+abstract class _UpdateProjectLabelRequestDto
+    implements UpdateProjectLabelRequestDto {
+  const factory _UpdateProjectLabelRequestDto(
+      {required final String title,
+      required final String description,
+      required final String color}) = _$_UpdateProjectLabelRequestDto;
+
+  factory _UpdateProjectLabelRequestDto.fromJson(Map<String, dynamic> json) =
+      _$_UpdateProjectLabelRequestDto.fromJson;
+
+  @override
+  String get title;
+  @override
+  String get description;
+  @override
+  String get color;
+  @override
+  @JsonKey(ignore: true)
+  _$$_UpdateProjectLabelRequestDtoCopyWith<_$_UpdateProjectLabelRequestDto>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 WishRequestDto _$WishRequestDtoFromJson(Map<String, dynamic> json) {
@@ -1531,6 +1511,7 @@ mixin _$WishUpdateRequestDto {
   String? get title => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
   String? get currentState => throw _privateConstructorUsedError;
+  List<String>? get labelsId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1549,7 +1530,8 @@ abstract class $WishUpdateRequestDtoCopyWith<$Res> {
       int projectId,
       String? title,
       String? description,
-      String? currentState});
+      String? currentState,
+      List<String>? labelsId});
 }
 
 /// @nodoc
@@ -1571,6 +1553,7 @@ class _$WishUpdateRequestDtoCopyWithImpl<$Res,
     Object? title = freezed,
     Object? description = freezed,
     Object? currentState = freezed,
+    Object? labelsId = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -1593,6 +1576,10 @@ class _$WishUpdateRequestDtoCopyWithImpl<$Res,
           ? _value.currentState
           : currentState // ignore: cast_nullable_to_non_nullable
               as String?,
+      labelsId: freezed == labelsId
+          ? _value.labelsId
+          : labelsId // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ) as $Val);
   }
 }
@@ -1610,7 +1597,8 @@ abstract class _$$_WishUpdateRequestDtoCopyWith<$Res>
       int projectId,
       String? title,
       String? description,
-      String? currentState});
+      String? currentState,
+      List<String>? labelsId});
 }
 
 /// @nodoc
@@ -1629,6 +1617,7 @@ class __$$_WishUpdateRequestDtoCopyWithImpl<$Res>
     Object? title = freezed,
     Object? description = freezed,
     Object? currentState = freezed,
+    Object? labelsId = freezed,
   }) {
     return _then(_$_WishUpdateRequestDto(
       id: null == id
@@ -1651,6 +1640,10 @@ class __$$_WishUpdateRequestDtoCopyWithImpl<$Res>
           ? _value.currentState
           : currentState // ignore: cast_nullable_to_non_nullable
               as String?,
+      labelsId: freezed == labelsId
+          ? _value._labelsId
+          : labelsId // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
@@ -1663,7 +1656,9 @@ class _$_WishUpdateRequestDto implements _WishUpdateRequestDto {
       required this.projectId,
       this.title,
       this.description,
-      this.currentState});
+      this.currentState,
+      final List<String>? labelsId})
+      : _labelsId = labelsId;
 
   factory _$_WishUpdateRequestDto.fromJson(Map<String, dynamic> json) =>
       _$$_WishUpdateRequestDtoFromJson(json);
@@ -1678,10 +1673,19 @@ class _$_WishUpdateRequestDto implements _WishUpdateRequestDto {
   final String? description;
   @override
   final String? currentState;
+  final List<String>? _labelsId;
+  @override
+  List<String>? get labelsId {
+    final value = _labelsId;
+    if (value == null) return null;
+    if (_labelsId is EqualUnmodifiableListView) return _labelsId;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
-    return 'WishUpdateRequestDto(id: $id, projectId: $projectId, title: $title, description: $description, currentState: $currentState)';
+    return 'WishUpdateRequestDto(id: $id, projectId: $projectId, title: $title, description: $description, currentState: $currentState, labelsId: $labelsId)';
   }
 
   @override
@@ -1696,13 +1700,20 @@ class _$_WishUpdateRequestDto implements _WishUpdateRequestDto {
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.currentState, currentState) ||
-                other.currentState == currentState));
+                other.currentState == currentState) &&
+            const DeepCollectionEquality().equals(other._labelsId, _labelsId));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, projectId, title, description, currentState);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      projectId,
+      title,
+      description,
+      currentState,
+      const DeepCollectionEquality().hash(_labelsId));
 
   @JsonKey(ignore: true)
   @override
@@ -1725,7 +1736,8 @@ abstract class _WishUpdateRequestDto implements WishUpdateRequestDto {
       required final int projectId,
       final String? title,
       final String? description,
-      final String? currentState}) = _$_WishUpdateRequestDto;
+      final String? currentState,
+      final List<String>? labelsId}) = _$_WishUpdateRequestDto;
 
   factory _WishUpdateRequestDto.fromJson(Map<String, dynamic> json) =
       _$_WishUpdateRequestDto.fromJson;
@@ -1740,6 +1752,8 @@ abstract class _WishUpdateRequestDto implements WishUpdateRequestDto {
   String? get description;
   @override
   String? get currentState;
+  @override
+  List<String>? get labelsId;
   @override
   @JsonKey(ignore: true)
   _$$_WishUpdateRequestDtoCopyWith<_$_WishUpdateRequestDto> get copyWith =>

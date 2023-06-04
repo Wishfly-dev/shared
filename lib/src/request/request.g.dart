@@ -89,24 +89,6 @@ Map<String, dynamic> _$$_CreateProjectLabelRequestDtoToJson(
       'color': instance.color,
     };
 
-_$_UpdateProjectLabelRequestDto _$$_UpdateProjectLabelRequestDtoFromJson(
-        Map<String, dynamic> json) =>
-    _$_UpdateProjectLabelRequestDto(
-      id: json['id'] as String,
-      title: json['title'] as String?,
-      description: json['description'] as String?,
-      color: json['color'] as String?,
-    );
-
-Map<String, dynamic> _$$_UpdateProjectLabelRequestDtoToJson(
-        _$_UpdateProjectLabelRequestDto instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'description': instance.description,
-      'color': instance.color,
-    };
-
 _$_ProjectRequestDto _$$_ProjectRequestDtoFromJson(Map<String, dynamic> json) =>
     _$_ProjectRequestDto(
       title: json['title'] as String,
@@ -118,6 +100,22 @@ Map<String, dynamic> _$$_ProjectRequestDtoToJson(
     <String, dynamic>{
       'title': instance.title,
       'description': instance.description,
+    };
+
+_$_UpdateProjectLabelRequestDto _$$_UpdateProjectLabelRequestDtoFromJson(
+        Map<String, dynamic> json) =>
+    _$_UpdateProjectLabelRequestDto(
+      title: json['title'] as String,
+      description: json['description'] as String,
+      color: json['color'] as String,
+    );
+
+Map<String, dynamic> _$$_UpdateProjectLabelRequestDtoToJson(
+        _$_UpdateProjectLabelRequestDto instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'description': instance.description,
+      'color': instance.color,
     };
 
 _$_WishRequestDto _$$_WishRequestDtoFromJson(Map<String, dynamic> json) =>
@@ -142,6 +140,9 @@ _$_WishUpdateRequestDto _$$_WishUpdateRequestDtoFromJson(
       title: json['title'] as String?,
       description: json['description'] as String?,
       currentState: json['currentState'] as String?,
+      labelsId: (json['labelsId'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
     );
 
 Map<String, dynamic> _$$_WishUpdateRequestDtoToJson(
@@ -152,4 +153,5 @@ Map<String, dynamic> _$$_WishUpdateRequestDtoToJson(
       'title': instance.title,
       'description': instance.description,
       'currentState': instance.currentState,
+      'labelsId': instance.labelsId,
     };
