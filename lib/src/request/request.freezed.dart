@@ -1511,7 +1511,7 @@ mixin _$WishUpdateRequestDto {
   String? get title => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
   String? get currentState => throw _privateConstructorUsedError;
-  List<String>? get labelsId => throw _privateConstructorUsedError;
+  List<String>? get labels => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1531,7 +1531,7 @@ abstract class $WishUpdateRequestDtoCopyWith<$Res> {
       String? title,
       String? description,
       String? currentState,
-      List<String>? labelsId});
+      List<String>? labels});
 }
 
 /// @nodoc
@@ -1553,7 +1553,7 @@ class _$WishUpdateRequestDtoCopyWithImpl<$Res,
     Object? title = freezed,
     Object? description = freezed,
     Object? currentState = freezed,
-    Object? labelsId = freezed,
+    Object? labels = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -1576,9 +1576,9 @@ class _$WishUpdateRequestDtoCopyWithImpl<$Res,
           ? _value.currentState
           : currentState // ignore: cast_nullable_to_non_nullable
               as String?,
-      labelsId: freezed == labelsId
-          ? _value.labelsId
-          : labelsId // ignore: cast_nullable_to_non_nullable
+      labels: freezed == labels
+          ? _value.labels
+          : labels // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ) as $Val);
   }
@@ -1598,7 +1598,7 @@ abstract class _$$_WishUpdateRequestDtoCopyWith<$Res>
       String? title,
       String? description,
       String? currentState,
-      List<String>? labelsId});
+      List<String>? labels});
 }
 
 /// @nodoc
@@ -1617,7 +1617,7 @@ class __$$_WishUpdateRequestDtoCopyWithImpl<$Res>
     Object? title = freezed,
     Object? description = freezed,
     Object? currentState = freezed,
-    Object? labelsId = freezed,
+    Object? labels = freezed,
   }) {
     return _then(_$_WishUpdateRequestDto(
       id: null == id
@@ -1640,9 +1640,9 @@ class __$$_WishUpdateRequestDtoCopyWithImpl<$Res>
           ? _value.currentState
           : currentState // ignore: cast_nullable_to_non_nullable
               as String?,
-      labelsId: freezed == labelsId
-          ? _value._labelsId
-          : labelsId // ignore: cast_nullable_to_non_nullable
+      labels: freezed == labels
+          ? _value._labels
+          : labels // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
   }
@@ -1657,8 +1657,8 @@ class _$_WishUpdateRequestDto implements _WishUpdateRequestDto {
       this.title,
       this.description,
       this.currentState,
-      final List<String>? labelsId})
-      : _labelsId = labelsId;
+      final List<String>? labels})
+      : _labels = labels;
 
   factory _$_WishUpdateRequestDto.fromJson(Map<String, dynamic> json) =>
       _$$_WishUpdateRequestDtoFromJson(json);
@@ -1673,19 +1673,19 @@ class _$_WishUpdateRequestDto implements _WishUpdateRequestDto {
   final String? description;
   @override
   final String? currentState;
-  final List<String>? _labelsId;
+  final List<String>? _labels;
   @override
-  List<String>? get labelsId {
-    final value = _labelsId;
+  List<String>? get labels {
+    final value = _labels;
     if (value == null) return null;
-    if (_labelsId is EqualUnmodifiableListView) return _labelsId;
+    if (_labels is EqualUnmodifiableListView) return _labels;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
   }
 
   @override
   String toString() {
-    return 'WishUpdateRequestDto(id: $id, projectId: $projectId, title: $title, description: $description, currentState: $currentState, labelsId: $labelsId)';
+    return 'WishUpdateRequestDto(id: $id, projectId: $projectId, title: $title, description: $description, currentState: $currentState, labels: $labels)';
   }
 
   @override
@@ -1701,19 +1701,13 @@ class _$_WishUpdateRequestDto implements _WishUpdateRequestDto {
                 other.description == description) &&
             (identical(other.currentState, currentState) ||
                 other.currentState == currentState) &&
-            const DeepCollectionEquality().equals(other._labelsId, _labelsId));
+            const DeepCollectionEquality().equals(other._labels, _labels));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      projectId,
-      title,
-      description,
-      currentState,
-      const DeepCollectionEquality().hash(_labelsId));
+  int get hashCode => Object.hash(runtimeType, id, projectId, title,
+      description, currentState, const DeepCollectionEquality().hash(_labels));
 
   @JsonKey(ignore: true)
   @override
@@ -1737,7 +1731,7 @@ abstract class _WishUpdateRequestDto implements WishUpdateRequestDto {
       final String? title,
       final String? description,
       final String? currentState,
-      final List<String>? labelsId}) = _$_WishUpdateRequestDto;
+      final List<String>? labels}) = _$_WishUpdateRequestDto;
 
   factory _WishUpdateRequestDto.fromJson(Map<String, dynamic> json) =
       _$_WishUpdateRequestDto.fromJson;
@@ -1753,7 +1747,7 @@ abstract class _WishUpdateRequestDto implements WishUpdateRequestDto {
   @override
   String? get currentState;
   @override
-  List<String>? get labelsId;
+  List<String>? get labels;
   @override
   @JsonKey(ignore: true)
   _$$_WishUpdateRequestDtoCopyWith<_$_WishUpdateRequestDto> get copyWith =>

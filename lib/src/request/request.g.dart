@@ -140,9 +140,8 @@ _$_WishUpdateRequestDto _$$_WishUpdateRequestDtoFromJson(
       title: json['title'] as String?,
       description: json['description'] as String?,
       currentState: json['currentState'] as String?,
-      labelsId: (json['labelsId'] as List<dynamic>?)
-          ?.map((e) => e as String)
-          .toList(),
+      labels:
+          (json['labels'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
 Map<String, dynamic> _$$_WishUpdateRequestDtoToJson(
@@ -153,5 +152,5 @@ Map<String, dynamic> _$$_WishUpdateRequestDtoToJson(
       'title': instance.title,
       'description': instance.description,
       'currentState': instance.currentState,
-      'labelsId': instance.labelsId,
+      'labels': instance.labels,
     };
