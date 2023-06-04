@@ -1,3 +1,5 @@
+## 0.2.2
+- refactor: renamed labelsId to labels in wish request
 ## 0.2.1
 - fix: divided create and update label request
 ## 0.2.0
