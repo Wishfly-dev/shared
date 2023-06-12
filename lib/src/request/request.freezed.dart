@@ -1333,6 +1333,7 @@ mixin _$WishRequestDto {
   String get title => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
   int get projectId => throw _privateConstructorUsedError;
+  List<String>? get labels => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1346,7 +1347,8 @@ abstract class $WishRequestDtoCopyWith<$Res> {
           WishRequestDto value, $Res Function(WishRequestDto) then) =
       _$WishRequestDtoCopyWithImpl<$Res, WishRequestDto>;
   @useResult
-  $Res call({String title, String? description, int projectId});
+  $Res call(
+      {String title, String? description, int projectId, List<String>? labels});
 }
 
 /// @nodoc
@@ -1365,6 +1367,7 @@ class _$WishRequestDtoCopyWithImpl<$Res, $Val extends WishRequestDto>
     Object? title = null,
     Object? description = freezed,
     Object? projectId = null,
+    Object? labels = freezed,
   }) {
     return _then(_value.copyWith(
       title: null == title
@@ -1379,6 +1382,10 @@ class _$WishRequestDtoCopyWithImpl<$Res, $Val extends WishRequestDto>
           ? _value.projectId
           : projectId // ignore: cast_nullable_to_non_nullable
               as int,
+      labels: freezed == labels
+          ? _value.labels
+          : labels // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ) as $Val);
   }
 }
@@ -1391,7 +1398,8 @@ abstract class _$$_WishRequestDtoCopyWith<$Res>
       __$$_WishRequestDtoCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String title, String? description, int projectId});
+  $Res call(
+      {String title, String? description, int projectId, List<String>? labels});
 }
 
 /// @nodoc
@@ -1408,6 +1416,7 @@ class __$$_WishRequestDtoCopyWithImpl<$Res>
     Object? title = null,
     Object? description = freezed,
     Object? projectId = null,
+    Object? labels = freezed,
   }) {
     return _then(_$_WishRequestDto(
       title: null == title
@@ -1422,6 +1431,10 @@ class __$$_WishRequestDtoCopyWithImpl<$Res>
           ? _value.projectId
           : projectId // ignore: cast_nullable_to_non_nullable
               as int,
+      labels: freezed == labels
+          ? _value._labels
+          : labels // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
@@ -1432,7 +1445,9 @@ class _$_WishRequestDto implements _WishRequestDto {
   const _$_WishRequestDto(
       {required this.title,
       required this.description,
-      required this.projectId});
+      required this.projectId,
+      required final List<String>? labels})
+      : _labels = labels;
 
   factory _$_WishRequestDto.fromJson(Map<String, dynamic> json) =>
       _$$_WishRequestDtoFromJson(json);
@@ -1443,10 +1458,19 @@ class _$_WishRequestDto implements _WishRequestDto {
   final String? description;
   @override
   final int projectId;
+  final List<String>? _labels;
+  @override
+  List<String>? get labels {
+    final value = _labels;
+    if (value == null) return null;
+    if (_labels is EqualUnmodifiableListView) return _labels;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
-    return 'WishRequestDto(title: $title, description: $description, projectId: $projectId)';
+    return 'WishRequestDto(title: $title, description: $description, projectId: $projectId, labels: $labels)';
   }
 
   @override
@@ -1458,12 +1482,14 @@ class _$_WishRequestDto implements _WishRequestDto {
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.projectId, projectId) ||
-                other.projectId == projectId));
+                other.projectId == projectId) &&
+            const DeepCollectionEquality().equals(other._labels, _labels));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, title, description, projectId);
+  int get hashCode => Object.hash(runtimeType, title, description, projectId,
+      const DeepCollectionEquality().hash(_labels));
 
   @JsonKey(ignore: true)
   @override
@@ -1483,7 +1509,8 @@ abstract class _WishRequestDto implements WishRequestDto {
   const factory _WishRequestDto(
       {required final String title,
       required final String? description,
-      required final int projectId}) = _$_WishRequestDto;
+      required final int projectId,
+      required final List<String>? labels}) = _$_WishRequestDto;
 
   factory _WishRequestDto.fromJson(Map<String, dynamic> json) =
       _$_WishRequestDto.fromJson;
@@ -1494,6 +1521,8 @@ abstract class _WishRequestDto implements WishRequestDto {
   String? get description;
   @override
   int get projectId;
+  @override
+  List<String>? get labels;
   @override
   @JsonKey(ignore: true)
   _$$_WishRequestDtoCopyWith<_$_WishRequestDto> get copyWith =>

@@ -123,6 +123,8 @@ _$_WishRequestDto _$$_WishRequestDtoFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String,
       description: json['description'] as String?,
       projectId: json['projectId'] as int,
+      labels:
+          (json['labels'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
 Map<String, dynamic> _$$_WishRequestDtoToJson(_$_WishRequestDto instance) =>
@@ -130,6 +132,7 @@ Map<String, dynamic> _$$_WishRequestDtoToJson(_$_WishRequestDto instance) =>
       'title': instance.title,
       'description': instance.description,
       'projectId': instance.projectId,
+      'labels': instance.labels,
     };
 
 _$_WishUpdateRequestDto _$$_WishUpdateRequestDtoFromJson(
