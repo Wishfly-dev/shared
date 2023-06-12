@@ -9,5 +9,6 @@ class WishRequestDto with _$WishRequestDto {
     required List<String>? labels,
   }) = _WishRequestDto;
 
-  factory WishRequestDto.fromJson(Map<String, Object?> json) => _$WishRequestDtoFromJson(json);
+  factory WishRequestDto.fromJson(Map<String, Object?> json) =>
+      _$WishRequestDtoFromJson(json);
 }

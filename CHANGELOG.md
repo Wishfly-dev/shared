@@ -1,3 +1,5 @@
+## 0.2.4
+- fix: divided create and update wish request into files
 ## 0.2.3
 - feat: added `labels` field to in wish request
 ## 0.2.2

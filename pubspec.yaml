@@ -1,6 +1,6 @@
 name: wishfly_shared
 description: Wishfly shared code between client and server. This package should not be used directly.
-version: 0.2.3
+version: 0.2.4
 repository: https://github.com/Wishfly-dev/shared
 
 environment:
