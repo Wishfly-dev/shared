@@ -1,5 +1,7 @@
+## 0.2.3
+- feat: added `labels` field to in wish request
 ## 0.2.2
-- refactor: renamed labelsId to labels in wish request
+- refactor: renamed `labelsId` to `labels` in wish request
 ## 0.2.1
 - fix: divided create and update label request
 ## 0.2.0
