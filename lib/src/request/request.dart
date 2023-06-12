@@ -10,4 +10,5 @@ part 'project/project_request_dto.dart';
 part 'project/update_project_label_request_dto.dart';
 part 'request.freezed.dart';
 part 'request.g.dart';
-part 'wish/wish_request_dto.dart';
+part 'wish/wish_insert_request_dto.dart';
+part 'wish/wish_update_request_dto.dart';
